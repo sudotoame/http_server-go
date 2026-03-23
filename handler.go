@@ -1,19 +1,19 @@
-package main
+// package main
 
-import (
-	"fmt"
-	"net/http"
-)
+// import (
+// 	"fmt"
+// 	"net/http"
+// )
 
-type HelloHandler struct{}
+// type HelloHandler struct{}
 
-func NewHelloHandler(router *http.ServeMux) {
-	handler := &HelloHandler{}
-	router.HandleFunc("/hello", handler.Hello())
-}
+// func NewHelloHandler(router *http.ServeMux) {
+// 	handler := &HelloHandler{}
+// 	router.HandleFunc("/hello", handler.Hello())
+// }
 
-func (h *HelloHandler) Hello() http.HandlerFunc {
-	return func(w http.ResponseWriter, req *http.Request) {
-		fmt.Println("Hello")
-	}
-}
+// func (h *HelloHandler) Hello() http.HandlerFunc {
+// 	return func(w http.ResponseWriter, req *http.Request) {
+// 		fmt.Println("Hello")
+// 	}
+// }
